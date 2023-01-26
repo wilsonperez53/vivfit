@@ -1,0 +1,20 @@
+{
+  "staging": {
+    "awscloudformation": {
+      "AuthRoleName": "amplify-vivfitauth-staging-33617-authRole",
+      "UnauthRoleArn": "arn:aws:iam::331665375626:role/amplify-vivfitauth-staging-33617-unauthRole",
+      "AuthRoleArn": "arn:aws:iam::331665375626:role/amplify-vivfitauth-staging-33617-authRole",
+      "Region": "us-east-1",
+      "DeploymentBucketName": "amplify-vivfitauth-staging-33617-deployment",
+      "UnauthRoleName": "amplify-vivfitauth-staging-33617-unauthRole",
+      "StackName": "amplify-vivfitauth-staging-33617",
+      "StackId": "arn:aws:cloudformation:us-east-1:331665375626:stack/amplify-vivfitauth-staging-33617/00811920-6172-11ed-8162-0e4939d9bfcd",
+      "AmplifyAppId": "d3t5bgdrd2kphy"
+    },
+    "categories": {
+      "auth": {
+        "VivfitAuth": {}
+      }
+    }
+  }
+}
