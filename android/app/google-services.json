@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "563539382006",
+    "project_id": "vivfit-69ab0",
+    "storage_bucket": "vivfit-69ab0.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:563539382006:android:43291dbd14b4e6790ce6d7",
+        "android_client_info": {
+          "package_name": "com.vivfitness"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "563539382006-5mrs5e8q0nhufjvqk31761448ktt5nhk.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyC6MxGC8SH_4-O_Mks4vBIxvUsuWC-f82Q"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "563539382006-5mrs5e8q0nhufjvqk31761448ktt5nhk.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

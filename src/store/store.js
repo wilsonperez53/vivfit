@@ -1,13 +1,22 @@
-/*import { configureStore } from '@reduxjs/toolkit'
+import { configureStore } from "@reduxjs/toolkit";
+import userReducer from "./slices/userSlice";
+import storage from 'redux-persist/lib/storage';
+import { persistReducer, persistStore } from 'redux-persist';
+import thunk from 'redux-thunk';
+import storageSession from 'reduxjs-toolkit-persist/lib/storage/session'
 
-export default configureStore({
-  reducer: {}
-})*/
-import { configureStore } from "@reduxjs/toolkit"; 
-import { userReducer } from "./slices/userSlice";
 
-const store = configureStore({
-  reducer: { currentUser: userReducer}
-});
+const persistConfig = {
+  key: 'root',
+  storageSession,
+}
 
-export default store;
+const persistedReducer = persistReducer(persistConfig, userReducer)
+
+export const store = configureStore({
+  reducer: persistedReducer,
+  devTools: process.env.NODE_ENV !== 'production',
+  middleware: [thunk]
+})
+
+export const persistor = persistStore(store)
