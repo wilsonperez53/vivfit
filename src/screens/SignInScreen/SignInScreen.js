@@ -18,12 +18,22 @@ import {useForm, Controller} from 'react-hook-form';
 import {Auth} from 'aws-amplify';
 import { useDispatch, useSelector } from 'react-redux';
 import { addUser } from '../../store/slices/userSlice';
+import AsyncStorage from '@react-native-async-storage/async-storage';
+import sessionStorage from 'redux-persist/es/storage/session';
+import localStorage from 'redux-persist/es/storage';
 
 const SignInScreen = () => {
   const {height} = useWindowDimensions();
   const navigation = useNavigation();
   const [loading, setLoading] = useState(false);
   //const currentUser = useSelector(state => state.currentUser.users);
+  
+  const [name, setName] = useState('')
+
+  const signin = e => {
+    e.preventDefault()
+    dispatch(signIn({name}))
+  }
   const dispatch = useDispatch();
   const {
     control,
@@ -43,7 +53,12 @@ const SignInScreen = () => {
       dispatch(addUser({
         payload: data.username
       }));
-      console.log(response);
+    
+      /*await AsyncStorage.setItem(
+        '@CurrentUser:key',
+        data.username,
+      );*/
+      
     } catch (e) {
       Alert.alert('Oops', e.message);
     }
@@ -72,6 +87,7 @@ const SignInScreen = () => {
           placeholder="Username"
           control={control}
           rules={{required: 'Username is required'}}
+          onChange={e => setName(e.target.value)}
         />
 
         <CustomInput
