@@ -12,4 +12,4 @@ const rootReducer = combineReducers({
 
 export default rootReducer;
 
-export { default as currentUser } from './reducerUser'
+export { default as currentUser } from './userReducer'

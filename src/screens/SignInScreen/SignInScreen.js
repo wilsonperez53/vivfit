@@ -20,7 +20,7 @@ import { useDispatch, useSelector } from 'react-redux';
 import { addUser } from '../../store/slices/userSlice';
 import AsyncStorage from '@react-native-async-storage/async-storage';
 import sessionStorage from 'redux-persist/es/storage/session';
-import localStorage from 'redux-persist/es/storage';
+//import localStorage from 'redux-persist/es/storage';
 
 const SignInScreen = () => {
   const {height} = useWindowDimensions();
@@ -54,10 +54,10 @@ const SignInScreen = () => {
         payload: data.username
       }));
     
-      /*await AsyncStorage.setItem(
+      await AsyncStorage.setItem(
         '@CurrentUser:key',
         data.username,
-      );*/
+      );
       
     } catch (e) {
       Alert.alert('Oops', e.message);
