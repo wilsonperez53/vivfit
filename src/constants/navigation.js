@@ -1,0 +1,21 @@
+const screenNames = {
+    HOME: 'HOME',
+    ROUTINE: 'ROUTINE',
+    EXERCISE: 'EXERCISE',
+    SETTINGS: 'SETTINGS',
+    HOMESTACK: 'HOMESTACK',
+    ROUTINEPLAYLIST: 'ROUTINEPLAYLIST',
+    EXERCISE_COMPLETED: 'EXERCISE_COMPLETED',
+    SPLASH_SCREEN: 'SPLASH_SCREEN',
+    USER_CONTAINER: 'USER_CONTAINER',
+    LIST_EXERCISE: 'LIST_EXERCISE',
+    ANALYSIS: 'ANALYSIS',
+    SIGN_IN: 'SignIn',
+    SIGN_UP: 'SignUp',
+    CONFIRM_EMAIL: 'ConfirmEmail',
+    FORGOT_PASSWORD: 'ForgotPassword',
+    NEW_PASSWORD: 'NewPassword',
+
+};
+
+export default screenNames

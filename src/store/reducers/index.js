@@ -1,12 +1,15 @@
-import { modal } from "./modal";
 
-import { combineReducers } from "redux";
-import userReducer from "./userReducer";
-/*
+import { combineReducers } from 'redux';
+import home from './home';
+import settings from './settings';
+import library from './library';
+
 const rootReducer = combineReducers({
-    currentUser: userReducer
+  home,
+  settings,
+  library
 });
 
-export default rootReducer
-*/
+export default rootReducer;
+
 export { default as currentUser } from './reducerUser'
