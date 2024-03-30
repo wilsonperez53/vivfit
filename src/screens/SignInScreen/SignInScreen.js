@@ -19,7 +19,7 @@ import {Auth} from 'aws-amplify';
 import { useDispatch, useSelector } from 'react-redux';
 import { addUser } from '../../store/slices/userSlice';
 import AsyncStorage from '@react-native-async-storage/async-storage';
-import sessionStorage from 'redux-persist/es/storage/session';
+//import sessionStorage from 'redux-persist/es/storage/session';
 //import localStorage from 'redux-persist/es/storage';
 
 const SignInScreen = () => {
