@@ -7,7 +7,7 @@ console.log(addUser('Test'));
 const initialState = {
   user: "",
 };
-
+/*
 const userReducer = createReducer(initialState, (builder) => {
     builder
         .addCase(addUser, (state, action) => {
